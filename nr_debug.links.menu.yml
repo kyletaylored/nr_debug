@@ -1,0 +1,12 @@
+nr_debug.report:
+  title: 'New Relic Debug'
+  description: 'New Relic status report, Monolog chain, and test tools.'
+  route_name: nr_debug.report
+  parent: system.admin_reports
+  weight: 50
+
+nr_debug.test:
+  title: 'Test Tools'
+  route_name: nr_debug.test
+  parent: nr_debug.report
+  weight: 10

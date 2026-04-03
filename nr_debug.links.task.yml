@@ -1,0 +1,11 @@
+nr_debug.report.tab:
+  title: 'Status Report'
+  route_name: nr_debug.report
+  base_route: nr_debug.report
+  weight: 0
+
+nr_debug.test.tab:
+  title: 'Test Tools'
+  route_name: nr_debug.test
+  base_route: nr_debug.report
+  weight: 10

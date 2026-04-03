@@ -1,0 +1,15 @@
+nr_debug.report:
+  path: '/admin/reports/newrelic-debug'
+  defaults:
+    _controller: '\Drupal\nr_debug\Controller\NrDebugController::report'
+    _title: 'New Relic Debug'
+  requirements:
+    _permission: 'administer site configuration'
+
+nr_debug.test:
+  path: '/admin/reports/newrelic-debug/test'
+  defaults:
+    _form: '\Drupal\nr_debug\Form\NrDebugTestForm'
+    _title: 'New Relic Test Tools'
+  requirements:
+    _permission: 'administer site configuration'

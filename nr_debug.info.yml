@@ -1,0 +1,8 @@
+name: 'New Relic Debug'
+type: module
+description: 'Debug tools for New Relic integration: status report, Monolog chain inspection, log testing, and API queries.'
+package: 'Custom'
+core_version_requirement: ^11
+configure: nr_debug.report
+dependencies:
+  - drupal:monolog
