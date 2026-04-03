@@ -1,0 +1,28 @@
+{
+    "name": "drupal/nr_debug",
+    "description": "Debug tools for New Relic + Monolog integration: status report, pipeline inspection, log testing, and NerdGraph API queries.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/nr_debug",
+    "authors": [
+        {
+            "name": "Kyle Taylor",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "drupal/core": "^11",
+        "drupal/monolog": "^3.0"
+    },
+    "suggest": {
+        "newrelic/monolog-enricher": "Provides the NR Logs API handler and processor used by this module's pipeline probe and test tools."
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^13"
+            }
+        }
+    }
+}
